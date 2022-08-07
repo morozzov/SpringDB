@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:postgres}?currentSchema=${DATABASE_SCHEMA:public}"
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:123}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
