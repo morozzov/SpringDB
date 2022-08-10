@@ -39,13 +39,4 @@ public class AdviceProcessor {
         Class declaringType = jp.getSignature().getDeclaringType();
         log.info("aspect() - method {}.{} called with params: {}. Returned: {}", declaringType, name, args, entity);
     }
-
-//    @Pointcut("@annotation(com.example.lesson1.advice.SetTerminated) && args(user,..)")
-//    public void aroundProcess(PlayerEntity user) {}
-//
-//    @Around(value = "aroundProcess(user)")
-//    public void changeState(ProceedingJoinPoint pjp, PlayerEntity user) throws Throwable {
-//        user.setTerminated(true);
-//        pjp.proceed();
-//    }
 }

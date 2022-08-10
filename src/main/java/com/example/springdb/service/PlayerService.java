@@ -43,12 +43,6 @@ public class PlayerService {
         }
     }
 
-    public PlayerEntity getPlayerByIdV2(Long id) {
-        log.info("tefkadfa");
-        return null;
-    }
-
-
     @Audit
     public ResponseEntity<ResponseDTO> findPlayersByStatus(PlayerStatus status) {
         try {
