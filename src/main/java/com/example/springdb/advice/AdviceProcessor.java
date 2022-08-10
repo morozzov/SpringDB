@@ -33,7 +33,7 @@ public class AdviceProcessor {
     }
 
     @AfterReturning(value = "playerServiceMethods()", returning = "entity")
-    public void printAllMethodsRetunrs(JoinPoint jp, PlayerEntity entity) {
+    public void printAllMethodsReturns(JoinPoint jp, PlayerEntity entity) {
         Object[] args = jp.getArgs();
         String name = jp.getSignature().getName();
         Class declaringType = jp.getSignature().getDeclaringType();
